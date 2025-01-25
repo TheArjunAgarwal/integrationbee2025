@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMI Integration Bee 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-color: #116636;
+            --secondary-color: #f4f3d2;
+        }
+        body {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+        <header class="p-6 text-center" style="background-color: var(--primary-color); color: var(--secondary-color);">
+            <h1 class="text-4xl font-bold">CMI Integration Bee 2025</h1>
+        </header>
+
+        <main class="container mx-auto px-4 py-8">
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4" style="color: var(--primary-color);">
+                    Competition Format
+                </h2>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <ul class="list-disc pl-5">
+                        <li>Qualification Round: Written exam</li>
+                        <li>Tournament Stage: Progressive elimination rounds</li>
+                        <li>Top 4-8 participants compete in final rounds</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4" style="color: var(--primary-color);">
+                    Competition Materials
+                </h2>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                        <a href="/qualification-round.pdf" class="hover:underline" style="color: var(--primary-color);">
+                            Qualification Round Q&A
+                        </a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                        <a href="/tournament-stages.pdf" class="hover:underline" style="color: var(--primary-color);">
+                            Tournament Stage Slides
+                        </a>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                        <a href="/formula-sheet.pdf" class="hover:underline" style="color: var(--primary-color);">
+                            Formula Sheet
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4" style="color: var(--primary-color);">
+                    Visual Resources
+                </h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <button id="bracketsToggle" class="w-full py-2 rounded" style="background-color: var(--primary-color); color: var(--secondary-color);">
+                            Show/Hide Competition Brackets
+                        </button>
+                        <img id="bracketsImage" src="/api/placeholder/600/400" alt="Competition Brackets" class="mt-4 w-full rounded hidden">
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <button id="winnersToggle" class="w-full py-2 rounded" style="background-color: var(--primary-color); color: var(--secondary-color);">
+                            Show/Hide Winners Photo
+                        </button>
+                        <img id="winnersImage" src="/api/placeholder/600/400" alt="Top Participants" class="mt-4 w-full rounded hidden">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold mb-4" style="color: var(--primary-color);">
+                    Live Stream
+                </h2>
+                <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                    <a href="https://youtube.com/live/cmi-integration-bee-2025" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="hover:underline" 
+                       style="color: var(--primary-color);">
+                        Watch Live Stream
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="p-4 text-center" style="background-color: var(--primary-color); color: var(--secondary-color);">
+            © 2025 CMI Integration Bee. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const bracketsToggle = document.getElementById('bracketsToggle');
+            const bracketsImage = document.getElementById('bracketsImage');
+            const winnersToggle = document.getElementById('winnersToggle');
+            const winnersImage = document.getElementById('winnersImage');
+
+            bracketsToggle.addEventListener('click', function() {
+                bracketsImage.classList.toggle('hidden');
+            });
+
+            winnersToggle.addEventListener('click', function() {
+                winnersImage.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
