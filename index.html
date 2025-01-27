@@ -13,6 +13,12 @@
         body {
             background-color: var(--secondary-color);
         }
+        .image-caption {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -60,27 +66,33 @@
             </section>
 
             <section class="mb-8">
-    <h2 class="text-2xl font-semibold mb-4" style="color: var(--primary-color);">
-        Visual Resources
-    </h2>
-    <div class="grid grid-cols-1 gap-4">
-        <div class="bg-white p-4 rounded-lg shadow-md">
-            <div class="text-center p-4" style="color: var(--primary-color);">
-                <img src="brackets.png" alt="Tournament brackets" width="200">
-            </div>
-        </div>
+                <h2 class="text-2xl font-semibold mb-4" style="color: var(--primary-color);">
+                    Visual Resources
+                </h2>
+                <div class="grid grid-cols-1 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex justify-center">
+                            <div class="text-center">
+                                <img src="brackets.png" alt="Tournament brackets" class="w-[400px] mx-auto">
+                                <p class="image-caption">Tournament brackets showing the competition structure</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="bg-white p-4 rounded-lg shadow-md">
-            <div class="text-center p-4" style="color: var(--primary-color);">
-                <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-                    <img src="prize-pic.png" alt="From left to right: Surya Raju, Krutarth Shah, and Karan Gupta holding prizes" width="350">
-                    <img src="winners.png" alt="From left to right: Krutarth Shah (2nd runner-up), Karan Gupta wearing the grand integrator cap, Satyen Jha (honorable mention), and Surya Raju (runner-up)" width="350">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex flex-col items-center space-y-8">
+                            <div class="text-center">
+                                <img src="prize-pic.png" alt="Winners with prizes" class="w-[600px] mx-auto">
+                                <p class="image-caption">From left to right: Surya Raju, Krutarth Shah, and Karan Gupta holding prizes</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="winners.png" alt="Winners ceremony" class="w-[600px] mx-auto">
+                                <p class="image-caption">From left to right: Krutarth Shah (2nd runner-up), Karan Gupta wearing the grand integrator cap, Satyen Jha (honorable mention), and Surya Raju (runner-up)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+            </section>
 
             <section>
                 <h2 class="text-2xl font-semibold mb-4" style="color: var(--primary-color);">
